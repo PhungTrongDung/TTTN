@@ -1,0 +1,24 @@
+@import url('./footer.css');
+
+/* Body styling */
+.body {
+    padding: 50px 267px;
+    text-align: center;
+}
+
+.body h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.body .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.body .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

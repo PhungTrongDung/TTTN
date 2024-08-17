@@ -1,0 +1,39 @@
+@import url('D:\Thực tập tốt nghiệp\code\my-web\src\App.css');
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    padding-top: 13px;
+    background-color: #ffffff;
+    color: #000000;
+    position: relative;
+}
+
+header h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+header .buttons {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: 150px;
+    /* Đặt các icon sát bên ngoài màn hình */
+}
+
+/* Styling cho các icon */
+header .buttons button {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header .buttons button:hover {
+    color: #c9c9c9;
+}

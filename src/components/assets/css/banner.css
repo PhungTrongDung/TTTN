@@ -1,0 +1,9 @@
+@import url('./nav.css');
+
+/* Banner styling */
+.banner {
+    height: 600px;
+    background-image: url('../images/banner1.png'); /* Placeholder image */
+    background-size: cover;
+    background-position: center;
+}

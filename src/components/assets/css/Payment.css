@@ -1,0 +1,134 @@
+@import url('./footer.css');
+
+.payment-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 267px;
+    margin: 0 auto;
+}
+
+.payment-part {
+    width: 50%;
+    padding: 10px;
+}
+
+.shipping-info {
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+}
+
+.shipping-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.shipping-info h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.input-group-double {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group-double input {
+    width: 48%;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-group button:first-child {
+    background-color: #ccc;
+}
+
+.button-group button:last-child {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.product-info {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.product-image {
+    width: 200%;
+}
+
+.product-image img {
+    width: 50%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.discount-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.discount-section input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.discount-section button {
+    width: 100px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.price-info {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.product-price,
+.total-price {
+    font-size: 18px;
+}
+
+.product-price {
+    color: #333;
+}
+
+.total-price {
+    font-weight: bold;
+    color: #d9534f;
+}

@@ -1,0 +1,87 @@
+@import url('./footer.css');
+
+.product-detail-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 267px; /* Padding 2 bên là 267px */
+    margin: 0 auto; /* Căn giữa */
+    max-width: 100%; /* Đảm bảo không vượt quá chiều rộng của màn hình */
+}
+
+.product-image {
+    width: 66.66%;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    padding: 0px 35px;
+}
+
+.product-info > div {
+    padding: 18px 10px;
+}
+
+.product-id-name {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd; /* Gạch chân */
+}
+
+.product-price {
+    color: red;
+    font-size: 20px;
+    border-bottom: 1px solid #ddd; /* Gạch chân */
+}
+
+.product-size {
+    border-bottom: 1px solid #ddd;
+}
+
+.product-size button {
+    margin-right: 10px;
+}
+
+.product-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.product-quantity button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.product-order button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #40a75f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.product-order button:hover {
+    background-color: #3fb688;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #666;
+}
+
+.product-description h4{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}

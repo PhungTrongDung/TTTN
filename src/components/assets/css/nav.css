@@ -1,0 +1,82 @@
+@import url('./footer.css');
+
+/* Navigation và Banner container */
+.navigation {
+    /* margin-top: 20px; */
+    border-bottom: 1px solid rgb(182, 182, 182);
+}
+
+/* Navigation styling */
+nav {
+    height: 60px;
+    background-color: #ffffff; /* Đổi màu nền thanh điều hướng */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+nav a, nav button {
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 0, 0); /* Đổi màu chữ thành đen */
+    margin: 0 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+nav a:hover, nav button:hover {
+    background-color: #a0a0a0; /* Đổi màu nền khi hover */
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Dropdown container styling */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+    display: none; /* Ẩn dropdown mặc định */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 5px; /* Bo góc cho dropdown */
+}
+
+/* Dropdown item styling */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* Đổi màu nền khi hover */
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Icon styling for dropdown buttons */
+.collection-button::after, .sanpham-button::after {
+    content: "▼";
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.dropdown:hover .collection-button::after, .dropdown:hover .sanpham-button::after {
+    content: "▲";
+}

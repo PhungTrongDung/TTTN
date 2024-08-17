@@ -1,0 +1,158 @@
+@import url('./footer.css');
+
+/* Container của trang */
+.onde-page-container {
+    padding: 0 167px;
+    text-align: center;
+}
+
+/* Tên thương hiệu */
+.brand-name {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Phần bộ lọc */
+.filter-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Tiêu đề bộ lọc */
+.filter-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+/* Container của dropdown */
+.filter-dropdown {
+    position: relative;
+    margin-left: 20px;
+    text-align: center;
+}
+
+/* Nút dropdown */
+.dropdown-button {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    width: 200px; /* Điều chỉnh width nếu cần */
+    text-align: left;
+}
+
+/* Nội dung của dropdown */
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    width: 220px; /* Điều chỉnh width nếu cần */
+    display: none; /* Ẩn nội dung dropdown theo mặc định */
+    box-sizing: border-box;
+}
+
+/* Hiển thị nội dung dropdown khi hover */
+.filter-dropdown:hover .dropdown-content {
+    display: block; /* Hiển thị khi hover */
+}
+
+/* Tùy chọn trong dropdown */
+.dropdown-content label, .size-option {
+    display: block; /* Đảm bảo mỗi tùy chọn nằm trên một dòng */
+    padding: 8px 16px;
+    cursor: pointer;
+    white-space: nowrap; /* Không ngắt dòng */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Loại bỏ viền dưới của tùy chọn cuối cùng */
+.dropdown-content label:last-child {
+    border-bottom: none;
+}
+
+/* Hover cho tùy chọn */
+.dropdown-content label:hover, .size-option:hover {
+    background-color: #ddd;
+}
+
+/* Tùy chọn kích thước */
+.size-option-container {
+    display: flex;
+    justify-content: space-between; /* Chia đều khoảng cách giữa các ô */
+    gap: 10px; /* Khoảng cách giữa các ô */
+}
+
+.size-option {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 40px; /* Điều chỉnh kích thước của ô nếu cần */
+}
+
+.size-option.selected {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Phần 3: Danh sách sản phẩm */
+.product-item-link {
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+    color: inherit; /* Kế thừa màu sắc từ phần tử cha */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cột trong mỗi hàng */
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 50px; /* Thêm khoảng cách dưới lưới sản phẩm */
+}
+
+/* Sản phẩm */
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-inList-info {
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.product-inList-name {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-inList-price {
+    font-size: 0.8rem;
+    color: #e05050;
+}
